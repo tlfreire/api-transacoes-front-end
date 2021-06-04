@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <div class="corpo">
+        <img id="imagem-fundo" src="../imagens/ccc.jpg" alt="">
+        <div class="formulario">
+            <input id="inputName" type="text" placeholder="name">
+            <input id="inputCpf" type="text" placeholder="cpf">
+            <input id="inputEmail" type="email" placeholder="email">
+            <input id="inputAge" type="text" placeholder="age">
+
+            <button onclick="cadastrarUsuario()" type="button" class="btn btn-success botao">Salvar</button>
+            <button onclick="voltar()" type="button" class="btn btn-light botao">Voltar</button>
+        </div>
+    </div>
+    
+</body>
+
+<script src="../cadastro/cadastro.js"></script>
+</html>
