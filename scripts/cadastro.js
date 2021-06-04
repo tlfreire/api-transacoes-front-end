@@ -6,16 +6,16 @@
         let email = document.getElementById("inputEmail").value;
         let age = document.getElementById("inputAge").value;
 
-        axios.post('http://localhost:3000/users', {
+        axios.post('https://thiago-heroku-api-transacoes-b.herokuapp.com/users', {
         name: name,
         cpf: cpf,
         email: email,
         age: age
      }).then(retorno => {
-        location.href="http://127.0.0.1:5500/aula-front-transacoes/listaUsuarios/listaDeUsuarios.html"
+        location.href="../listaUsuarios/listaDeUsuarios.html"
      });
      }
 
      function voltar() {
-      location.href="http://127.0.0.1:5500/aula-front-transacoes/listaUsuarios/listaDeUsuarios.html"
+      location.href="../listaUsuarios/listaDeUsuarios.html"
      }

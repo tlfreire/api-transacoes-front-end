@@ -1,7 +1,7 @@
 window.addEventListener('load', () => {
    const id = localStorage.getItem("id");
 
-   axios.get(`http://localhost:3000/users/${id}`)
+   axios.get(`https://thiago-heroku-api-transacoes-b.herokuapp.com/users/${id}`)
        .then((resposta) => {
            const { name, email, cpf, age } = resposta.data;
 
@@ -21,26 +21,26 @@ function atualizarUsuario() {
     const email = document.getElementById("inputEmail").value;
     const age = document.getElementById("inputAge").value;
 
-    axios.put(`http://localhost:3000/users/${id}`, {
+    axios.put(`https://thiago-heroku-api-transacoes-b.herokuapp.com/users/${id}`, {
         name: name,
         cpf: cpf,
         email: email,
         age: age
     }).then((resposta) => {
             alert("Usuário alterado");
-            location.href="http://127.0.0.1:5500/aula-front-transacoes/listaUsuarios/listaDeUsuarios.html"
+            location.href="../listaUsuarios/listaDeUsuarios.html"
     })
 }
 
 function apagarUsuario() {
     const id = localStorage.getItem("id");
-    axios.delete(`http://localhost:3000/users/${id}`)
+    axios.delete(`https://thiago-heroku-api-transacoes-b.herokuapp.com/users/${id}`)
         .then((resposta) => {
             alert("Usuário excluído");
-            location.href="http://127.0.0.1:5500/aula-front-transacoes/listaUsuarios/listaDeUsuarios.html"
+            location.href="../listaUsuarios/listaDeUsuarios.html"
         })
 }
 
 function voltar() {
-    location.href="http://127.0.0.1:5500/aula-front-transacoes/listaUsuarios/listaDeUsuarios.html"
+    location.href="./listaUsuarios/listaDeUsuarios.html"
 }

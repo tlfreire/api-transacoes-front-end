@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    axios.get('http://localhost:3000/users')
+    axios.get('https://thiago-heroku-api-transacoes-b.herokuapp.com/users')
         .then(resposta => {
             ImprimirDados(resposta.data.users);
         });
@@ -27,6 +27,6 @@ window.addEventListener('load', () => {
  function atualizar(id) {
     localStorage.setItem("id", id);
 
-    location.href='http://127.0.0.1:5500/aula-front-transacoes/atualizar/atualizar.html';
+    location.href='../atualizar/atualizar.html';
 }
 
