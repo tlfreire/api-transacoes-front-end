@@ -18,6 +18,7 @@ function atualizarUsuario() {
 
     const id = localStorage.getItem("id");
     const name = document.getElementById("inputName").value;
+    const cpf = document.getElementById("inputCpf").value;
     const email = document.getElementById("inputEmail").value;
     const age = document.getElementById("inputAge").value;
 
