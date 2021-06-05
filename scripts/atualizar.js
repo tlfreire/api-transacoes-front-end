@@ -42,5 +42,5 @@ function apagarUsuario() {
 }
 
 function voltar() {
-    location.href="./listaUsuarios/listaDeUsuarios.html"
+    location.href="../listaUsuarios/listaDeUsuarios.html"
 }
